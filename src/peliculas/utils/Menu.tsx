@@ -18,7 +18,7 @@ export default function Menu(){
                         </li>
                         <li className="nav-item">
                             <NavLink className="nav-link" activeClassName={claseActiva}
-                             to="/peliculas/filtro">
+                             to="/peliculas/filtrar">
                                 Filtrar Películas
                             </NavLink>
                         </li>
