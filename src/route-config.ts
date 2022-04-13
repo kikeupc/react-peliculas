@@ -22,10 +22,10 @@ const rutas = [
 
     {path: '/actores/crear', componente: CrearActores},
     {path: '/actores/editar/:id(\\d+)', componente: EditarActores},
-    {path: '/actores', componente: IndiceActores},
+    {path: '/actores', componente: IndiceActores, exact: true},
 
     {path: '/cines/crear', componente: CrearCines},
-    {path: '/cines/editar', componente: EditarCines},
+    {path: '/cines/editar', componente: EditarCines, exact: true},
     {path: '/cines', componente: IndiceCines},
 
     {path: '/peliculas/crear', componente: CrearPeliculas},
