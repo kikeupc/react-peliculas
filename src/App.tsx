@@ -1,9 +1,11 @@
 
 import './App.css';
-import Menu from './peliculas/utils/Menu'
+import Menu from './utils/Menu'
 import { BrowserRouter, Route } from 'react-router-dom';
 import rutas from './route-config'
+import configurarValidaciones from './validaciones'
 
+configurarValidaciones();
 
 function App() {
   return (

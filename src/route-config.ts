@@ -15,7 +15,7 @@ import CrearPeliculas from "./peliculas/CrearPeliculas";
 import EditarPeliculas from "./peliculas/EditarPeliculas";
 import FiltroPeliculas from "./peliculas/FiltroPeliculas";
 
-import RedireccionarALanding from './peliculas/utils/RedireccionarALanding'
+import RedireccionarALanding from './utils/RedireccionarALanding'
  
 const rutas = [    
     {path: '/generos/crear', componente: CrearGenero},
