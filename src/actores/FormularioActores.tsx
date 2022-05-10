@@ -4,6 +4,7 @@ import FormGroupText from "../utils/FormGroupText";
 import { actorCreacionDTO } from "./actores.model";
 import { Link } from "react-router-dom";
 import * as Yup from 'yup';
+import FormGroupFecha from "../utils/FormGroupFecha";
 
 export default function FormularioActores(props: formularioACtoresProps){
     return(
@@ -16,6 +17,8 @@ export default function FormularioActores(props: formularioACtoresProps){
             {(formikProps) => (
                 <Form>
                     <FormGroupText campo="nombre" label="Nombre"/>
+                    <FormGroupFecha label="Fecha Nacimiento" campo="fechaNacimiento" />
+
                     <Button disabled={formikProps.isSubmitting}
                         type="submit"
                     >Salvar</Button>
