@@ -6,7 +6,7 @@ export default function CrearActores() {
             <FormularioActores
                 modelo={{nombre: '', fechaNacimiento: undefined}}
                 onSubmit={valores => console.log(valores)}
-            />       
+            />
         </>
     )
 }

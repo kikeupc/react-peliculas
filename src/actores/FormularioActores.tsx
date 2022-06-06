@@ -17,7 +17,7 @@ export default function FormularioActores(props: formularioACtoresProps){
             {(formikProps) => (
                 <Form>
                     <FormGroupText campo="nombre" label="Nombre"/>
-                    <FormGroupFecha label="Fecha Nacimiento" campo="fechaNacimiento" />
+                   
 
                     <Button disabled={formikProps.isSubmitting}
                         type="submit"

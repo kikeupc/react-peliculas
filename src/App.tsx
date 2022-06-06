@@ -3,6 +3,7 @@ import './App.css';
 import Menu from './utils/Menu'
 import { BrowserRouter, Route } from 'react-router-dom';
 import rutas from './route-config'
+import { Switch } from 'react-router'
 import configurarValidaciones from './validaciones'
 
 configurarValidaciones();
@@ -15,13 +16,13 @@ function App() {
         <Menu />
 
         <div className='container'>
-          <switch>
+          <Switch>
             {rutas.map(ruta => 
             <Route key={ruta.path} path={ruta.path}
              exact={ruta.exact}>
                <ruta.componente/>
                </Route>)}            
-          </switch>
+          </Switch>
         </div>
       </BrowserRouter>
     </>
